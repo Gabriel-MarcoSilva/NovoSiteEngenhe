@@ -1,0 +1,355 @@
+/*estruturas globais*/
+body{
+    height: 100%;
+    margin: auto;
+    font-size: 30pt;
+    min-width: 1200px;
+    color: #540220;
+    font-family: arial;
+    font-weight: bolder;
+}
+#meio{
+    display: grid;
+    margin: auto;
+    min-width: 1200px;
+    margin-top:0px;
+}
+#titulo{
+    text-align: center;
+    color: darkred;
+}
+#cabecalho{
+    background-color: rgba(255,255,255,0.8);
+}
+#cabecalho2{
+    background-color: #d3d3d3;
+    margin: 0px;
+    width: 100%;
+}
+#rodape{
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(255,255,255,0.8);
+}
+.qqrcoisa{
+    max-width: 1200px;
+    min-width: 700px;
+    text-align: justify;
+    margin: auto;
+    padding: 10%;
+}
+/*estruturas*/
+#container{
+    width: 100%;
+    display: inline-grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 200px 200px;
+    grid-gap: 20px;
+    grid-row-gap: 70px;
+}
+#container2{
+    display: inline-grid;
+    grid-template-rows: repeat(3,1fr);
+    width: 100%;
+    grid-row-gap: 70px;
+}
+#container3{
+    display: grid;
+    grid-template-rows: repeat(2,1fr);
+    width: 100%;
+    grid-row-gap: 20px;
+}
+#container4{
+    display: inline-grid;
+    grid-template-rows: 500px;
+    grid-template-columns: 2fr 1fr;
+    grid-column-gap: 50px;
+}
+.subgrid1{
+    display: inline-grid;
+    grid-template-columns: 2fr 1fr;
+    grid-column-gap: 20px;
+    grid-template-rows: 150px;
+}
+.subgrid2{
+    display: inline-grid;
+    grid-template-columns: 1fr 2fr;
+    grid-column-gap: 20px;
+    grid-template-rows: 150px;
+}
+.item1{
+    padding: 25%;
+}
+#texto{
+    padding: 20px;
+}
+#proporcao{
+    max-width:1000px; 
+}
+#formulario{
+    margin: auto;
+    padding: 10%;
+}
+.form{
+    margin:30px;
+    display: inline-grid;
+    grid-template-columns: 150px 2fr;
+}
+input{
+    margin-top: 10px;
+}
+button{
+    border:none;
+    background-color: #e31474;
+    color: white;
+}
+#testamento{
+    background-color: #A60A43;
+}
+.dimensao{
+    width: 100%;
+    height: 100%;
+}
+#botao{
+    width: 80px;
+    height: 40px;
+    border:none;
+    border-radius: 20%;
+    background-color: #e31474;
+    margin: auto;
+}
+#botao:hover{
+    background-color: #A60A43;
+    transition: 1000ms;
+    cursor: pointer;
+}
+/*listas e palavras*/
+h1{
+    font-size: 40pt;
+}
+li{
+    display: inline-block;
+    padding-right: 10px;
+    color: rgb(168, 0, 0);
+    text-align: center;
+    justify-content: center;
+}
+#liEspecial{
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 240px;
+    height: 60px;
+}
+a{
+  text-decoration: none;
+  color: #540220;  
+}
+ul{
+    min-width: 900px;
+    font-size: 17pt;
+    padding: 0px;
+    float: right;
+    margin-top:35px;
+}
+hr{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    height: 10px;
+    border: none;
+    background-color: #540220;
+    width: 100%;
+}
+.vertical, .vertical2, .vertical3{
+    width: 10px;
+    height: 800px;
+    border:none;
+    position: absolute;
+    left: 3rem;
+    top: 82rem;
+    background-color: #e31474;
+}
+.vertical2{
+    left: 71rem;
+    top: 255rem;
+}
+.vertical3{
+    top: 51rem;
+    height: 400px;
+}
+#letraDiferente{
+    color: white;
+    margin-top: 90px;
+    margin-bottom: 0px;
+}
+.modificado{
+    font-size: 30pt;
+    max-width: 600px;
+}
+/*cores e bg*/
+#fundo{
+    background-image: url(imagens/diamante.jpeg);
+}
+#apresentacao, #noticias, #result, #empresas, #quemsomos{
+    min-height: 400px;
+}
+.apresentacao{
+    background-color:  #d3d3d3;
+}
+.bg_branco{
+    background-color: white;
+}
+.bg_diamante{
+    background-color: rgba(255,255,255,0.8);
+}
+.blocos, .item2{
+    background-color: #d3d3d3;
+}
+.linha{
+    height: 5px;
+    background-color: #e31474;
+}
+#nome,#email{
+    width: 500px;
+    height: 35px;
+    background-color: #A60A43;
+    border:none;
+}
+#autorizar{
+    background-color: #A60A43;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+#autorize{
+    font-size: 50%;
+    margin: auto;
+}
+/*imagens*/
+#amoeba, #amoeba2{
+    float: right;
+    margin-top:-150px;
+    width: 20%;
+    max-width: 300px;
+    height: 60%;
+    max-height: 400px;
+}
+#amoeba2{
+    margin-top: -480px;
+
+    }
+#logoEngenhe{
+    float: right;
+    margin-top: -300px;
+    margin-right: -80px;
+    height: 200px;
+    width: 200px;
+}
+@media(max-width: 768px){
+    #cabecalho2{
+        background-color: #d3d3d3;
+        margin: 0px;
+    }
+    body{
+        font-size: 20pt;
+    }
+    #apresentacao, #noticias, #result, #empresas, #quemsomos{
+        min-height: 300px;
+    }
+    h1{
+        font-size: 30pt;
+    }
+    #letraDiferente{
+        color: white;
+        margin-top: 100px;
+        margin-bottom: 0px;
+    }
+    #liEspecial{
+        width: 200px;
+        height: 50px;
+        margin-top: 20px;
+    }
+    #amoeba{
+        float: right;
+        margin-top:200px;
+        width: 20%;
+        max-width: 300px;
+        height: 60%;
+        max-height: 400px;
+    }
+
+    #logoEngenhe{
+        float: right;
+        margin-top: -190px;
+        margin-right: 90px;
+        height: 150px;
+        width: 150px;
+    }
+    ul{
+        top: -20px;
+        max-width: 560px;
+        padding: 0px;
+        text-align: right;
+        font-size: 17pt;
+        position: absolute;
+        left: 250px;
+    }
+    li{
+        padding: 0px;
+    }
+    .qqrcoisa{
+        max-width: 700px;
+        min-width: 500px;
+    }
+    #container{
+        width: 100%;
+        display: inline-grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(4,200px);
+        grid-gap: 20px;
+        grid-row-gap: 70px;
+        position: static;
+    }
+    .vertical3{
+    top: 81rem;
+    height: 400px;
+    }
+
+}
+@media(min-width: 1600px){
+    #cabecalho2{
+        background-color: #d3d3d3;
+        margin: 0px;
+    }
+    .qqrcoisa{
+        min-width: 1440px;
+        padding: 50px;
+   }
+    #container2{
+        width: 100%;
+        display: inline-grid;
+        grid-template-columns: repeat(3, 2fr);
+        grid-template-rows: 1fr;
+        grid-gap: 20px;
+        grid-row-gap: 70px;
+    }
+    ul{
+        font-size: 25pt;
+        margin-right: 200px;
+        margin-bottom: 0px;
+    }
+        #container{
+        width: 100%;
+        display: inline-grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 200px 200px;
+        grid-gap: 20px;
+        grid-row-gap: 70px;
+    }
+    #logoEngenhe{
+        float: right;
+        margin-top: -350px;
+        margin-left: 1090px;
+        height: 300px;
+        width: 300px;
+    }
+}
