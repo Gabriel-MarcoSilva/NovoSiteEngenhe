@@ -91,9 +91,10 @@ body{
     padding: 10%;
 }
 .form{
-    margin:30px;
+    margin:0px 20% 50px 20%;
     display: inline-grid;
     grid-template-columns: 150px 2fr;
+    grid-row-gap: 50px;
 }
 input{
     margin-top: 10px;
@@ -210,7 +211,7 @@ hr{
     background-color: #e31474;
 }
 #nome,#email{
-    width: 500px;
+    width: 400px;
     height: 35px;
     background-color: #A60A43;
     border:none;
@@ -312,8 +313,14 @@ hr{
         position: static;
     }
     .vertical3{
-    top: 81rem;
-    height: 400px;
+        top: 81rem;
+        height: 400px;
+    }
+    .form{
+        margin:0px 0% 50px 0%;
+        display: inline-grid;
+        grid-template-columns: 150px 2fr;
+        grid-row-gap: 50px;
     }
 
 }
